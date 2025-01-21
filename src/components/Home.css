@@ -1,0 +1,106 @@
+/* Navbar Base Styles */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Gradient background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px 20px; /* Ensure consistent spacing */
+
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1rem; /* Adjusted size for better readability */
+  margin-left: auto;
+  align-items: center; /* Vertically center the links */
+}
+
+.navbar-links .nav-link {
+  color: #AF47D2; /* Gold color for links */
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.navbar-links .nav-link:hover,
+.navbar-links .nav-link:focus {
+  color: #AF47D2; /* Brighter gold on hover/active */
+  text-decoration: none; /* Underline for emphasis */
+}
+
+/* Dropdown Menu */
+.custom-dropdown .dropdown-toggle {
+  color: #AF47D2 !important; /* Match the dropdown toggle with link colors */
+  font-weight: bold;
+}
+
+.custom-dropdown .dropdown-item {
+  color: #AF47D2; /* Dropdown items */
+  font-weight: 500;
+  font-size: 0.95rem; /* Slightly smaller than main links */
+}
+
+.custom-dropdown .dropdown-item:hover {
+  color: #AF47D2; /* Brighter gold on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle highlight on hover */
+}
+
+/* Brand Title */
+.brand-title {
+  margin-left: 10px;
+  font-size: 1.2rem; /* Slightly larger for emphasis */
+  color: #AF47D2; /* Harmonize with link colors */
+  font-weight: bold;
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+}
+
+/* Navbar Responsiveness */
+@media (max-width: 768px) {
+  .navbar-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-left: 0;
+  }
+
+  .navbar {
+      position: relative;
+  }
+
+  .brand-title {
+      font-size: 1rem; /* Adjust brand title size for smaller screens */
+  }
+}
+
+/* Logo Container */
+/* Logo Container */
+.logo-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text alignment */
+}
+
+/* Logo Image */
+.logo-image {
+  margin-bottom: 5px; /* Add spacing between logo and title */
+}
+
+/* Brand Title */
+.brand-title {
+  font-size: 1.2rem; /* Adjust size for emphasis */
+  color: #AF47D2; /* Harmonize with link colors */
+  font-weight: bold;
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+}
+
+
+

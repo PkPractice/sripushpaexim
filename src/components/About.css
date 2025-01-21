@@ -1,0 +1,27 @@
+.about-page {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} 
+
+.about-content {
+    max-width: 600px; /* Keeps content within a maximum width for readability */
+    margin-bottom: 30px; /* Space below the content */
+}
+
+.registration-header {
+    margin-top: 20px; /* Space above each paragraph */
+    color: #000000; /* Text color */
+    font-family: sans-serif; /* Font family */
+
+    line-height: 1.6; /* Improved line spacing for better readability */
+    margin-bottom: 15px; /* Space below each paragraph */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.carousel-container {
+    max-width: 400px; /* Set maximum width for the carousel */
+    width: 100%; /* Full width of the parent container */
+}
